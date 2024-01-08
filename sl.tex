@@ -116,7 +116,7 @@ LASSO(L1): Soft thresholding.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\columnwidth]{sl/lasso.png}
+\includegraphics[width=0.7\columnwidth]{sl/compare.png}
 \end{figure}
 
 \paragraph{贝叶斯线性回归} 
@@ -326,7 +326,7 @@ $$\int_{\bm x}\int_{\bm y}f(\bm x)K(\bm x, \bm y)f(\bm y)\mathrm{d}\bm x\mathrm{
 
 \begin{figure}[H]
     \centering
-\includegraphics[width=0.7\columnwidth]{smo.png}
+\includegraphics[width=0.7\columnwidth]{sl/smo.png}
 \end{figure}
 
 \section{监督学习}
@@ -744,7 +744,7 @@ normalize $w_{mn} \leftarrow \frac{w_{mn}}{\sum_n w_{mn}}$\begin{itemize}
 \end{enumerate}
 
 \paragraph{树的剪枝}
-采用算法\ref{alg:hunt}，我们可以构建一个预测尽可能准确的树，但是可能发生过拟合。有两个方案控制树的复杂度：
+采用算法，我们可以构建一个预测尽可能准确的树，但是可能发生过拟合。有两个方案控制树的复杂度：
 \begin{enumerate}
 \item 早停止：停止划分，如果增益小于阈值，或者树太深、集合太小
 \item 树剪枝：从树中移除一些分支，以降低总体的误差$C_\alpha(T) = C(T) + \alpha|T|$，其中$C(T)$是经验风险（比如说预测错误率），$|T|$是树的复杂度（比如说树的高度）。
@@ -812,7 +812,7 @@ $p(a,b,c,d) = p(d|a,b,c)p(a,b,c)$
 
 \begin{figure}[H]
     \centering
-\includegraphics[width=0.7\columnwidth]{factor.png}
+\includegraphics[width=0.7\columnwidth]{sl/factor.png}
 \end{figure}
 
 \paragraph{信念传播：和-积算法}
